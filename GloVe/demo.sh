@@ -52,9 +52,9 @@ fi
 make
 if [ ! -e sentiments.txt ]; then
   if hash wget 2>/dev/null; then
-    wget http://my.fit.edu/~aaravamudan2014/sentiments.zip
+    wget https://storage.googleapis.com/sentiment-analysis-151101.appspot.com/sentiments.zip
   else
-    curl -O http://my.fit.edu/~aaravamudan2014/sentiment.zip
+    curl -O https://storage.googleapis.com/sentiment-analysis-151101.appspot.com/sentiments.zip
   fi
   unzip sentiments.zip
   rm sentiments.zip
@@ -62,9 +62,9 @@ fi
 make
 if [ ! -e dist ]; then
   if hash wget 2>/dev/null; then
-    wget http://my.fit.edu/~aaravamudan2014/dist.zip
+    wget https://storage.googleapis.com/sentiment-analysis-151101.appspot.com/dist.zip
   else
-    curl -O http://my.fit.edu/~aaravamudan2014/dist.zip
+    curl -O https://storage.googleapis.com/sentiment-analysis-151101.appspot.com/dist.zip
   fi
   unzip dist.zip
   rm dist.zip
