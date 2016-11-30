@@ -7,9 +7,9 @@ set -e
 make
 if [ ! -e text8 ]; then
   if hash wget 2>/dev/null; then
-    wget http://my.fit.edu/~aaravamudan2014/text8.zip
+    wget https://storage.googleapis.com/sentiment-analysis-151101.appspot.com/text8.zip
   else
-    curl -O http://my.fit.edu/~aaravamudan2014/text8.zip
+    curl -O https://storage.googleapis.com/sentiment-analysis-151101.appspot.com/text8.zip
   fi
   unzip text8.zip
   rm text8.zip
