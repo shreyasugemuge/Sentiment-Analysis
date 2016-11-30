@@ -59,5 +59,15 @@ if [ ! -e sentiments.txt ]; then
   unzip sentiments.zip
   rm sentiments.zip
 fi
+make
+if [ ! -e dist ]; then
+  if hash wget 2>/dev/null; then
+    wget http://my.fit.edu/~aaravamudan2014/dist.zip
+  else
+    curl -O http://my.fit.edu/~aaravamudan2014/dist.zip
+  fi
+  unzip dist.zip
+  rm dist.zip
+fi
 echo "$ python sae.py"
 python sae.py
